@@ -1,0 +1,30 @@
+{
+    "svr": "gddb.vlinsys.net",
+    "program": [
+        {
+            "name": "gddb",
+            "version": "newest",
+            "url":"https://"
+        },
+        {
+            "name": "ddd1",
+            "version": "3333",
+            "url":"https://"
+        },
+        {
+            "name": "ddd2",
+            "version": "3333",
+            "url":"https://"
+        },
+        {
+            "name": "ddd3",
+            "version": "3333",
+            "url":"https://"
+        },
+        {
+            "name": "ddd4",
+            "version": "3333",
+            "url":"https://"
+        }
+    ]
+}
