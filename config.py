@@ -1,37 +1,33 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#文件解析
+# 文件解析
 
 import os
 import json
 import math
 
 
-
 """parse config.json"""
+
+
+# return a json data
 def readconfig(url):
+	# check url
 	if url == '':
-		print "null"
-# 		file_object = open('config.json')
-# try:
-#      all_the_text = file_object.read()
-# finally:
-#      file_object.close()
+		file_object = open('config.json')
+	else:
+		file_object = open(url)
 
+	# read content
+	try:
+		content = file_object.read()
+		content_json = json.loads(content)
+		pass
+	finally:
+		file_object.close()
+	return content_json
 
-# # print all_the_text
-
-
-# decodejson = json.loads(all_the_text)
-# svr = decodejson['svr']
-# program_list = decodejson['program']
-# program_list_leng = len(program_list)
-
-# if program_list_leng>0:
-# 	for i in range(0,program_list_leng):
-# 		print program_list[i]['name']
-# 		print program_list[i]['url']
-# 	pass
-
-readconfig('')
+# test
+# json = readconfig('config.json')
+# print json
