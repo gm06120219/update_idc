@@ -5,6 +5,10 @@ target:
 update IDC(internet data center) program & script.
 
 
+架构图
+Local >>===Internet===<< IDC Server
+Local负责将文件打包，并记录更新内容，发给Server[python]
+IDC Server负责自动更新[Shell]
 
 类图
 
@@ -21,7 +25,6 @@ class zfile
 
 class ssh
 	function cert(url, username, password)
-	function remote_cmd(url, username, password, cmd)
 	function sftp(url, username, password, src_file)
 
 
